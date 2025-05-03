@@ -158,7 +158,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-**PSL "Piast"**: [+ spd_votes +]%
+<span style="color: #22a16c;">**PSL "Piast"**</span>: [+ spd_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
