@@ -172,7 +172,7 @@ DVP: [+ dvp_votes +]%
 
 DNVP: [+ dnvp_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+<span style="color: #15218f;">**SND**</span>: [+ nsdap_votes +]%
 
 Others: [+ other_votes +]%
 
