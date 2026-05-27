@@ -40,7 +40,7 @@ Premier: [+ chancellor +] ([+ chancellor_party +])
 Sejm composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Polish People's Party "Piast""><span style="color: #20a36d;">**PSL "Piast"**</span></span>!}: [+ spd_r +]%
+{!<span class="tooltip-text" title="Polish People's Party Piast"><span style="color: #20a36d;">**PSL "Piast"**</span></span>!}: [+ spd_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
