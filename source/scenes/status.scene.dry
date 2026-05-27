@@ -29,8 +29,6 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
-
 [? if not has_president  : Chief of State: <span style="color: #7e7e7e;">**Józef Piłsudski**</span> (<span style="color: #7e7e7e;">**Ind.**</span>) ?][? if has_president : [+ president +] ([+ president_party +]) ?]
 
 Premier: [+ chancellor +] ([+ chancellor_party +])
