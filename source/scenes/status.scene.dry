@@ -31,9 +31,7 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 President: [+ president +]
 
-[? if pilsudski_naczelnik : Chief of State: <span style="color: #7e7e7e;">**Józef Piłsudski**</span> (<span style="color: #7e7e7e;">**Ind.**</span>) ?]
-
-[? if has_president : [+ president +] ([+ president_party +]) ?]
+[? if not has_president  : Chief of State: <span style="color: #7e7e7e;">**Józef Piłsudski**</span> (<span style="color: #7e7e7e;">**Ind.**</span>) ?][? if has_president : [+ president +] ([+ president_party +]) ?]
 
 Premier: [+ chancellor +] ([+ chancellor_party +])
 
@@ -57,7 +55,7 @@ Sejm composition:
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
+[? if piast_in_government = 1 : Budget: [+ budget +] ?]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
@@ -160,21 +158,17 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-<span style="color: #20a36d;">**PSL "Piast"**</span>: [+ spd_votes +]%
+<span style="color: #20a36d;">**PSL "Piast"**</span>: [+ piast_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+[? if kprp_formed: <span style="color: #740e0e;">**KPRP**</span>: [+ kprp_votes +]% ?]
 
-Z + BVP: [+ z_votes +]%
+<span style="color: #d61b1b;">**PPS**</span>: [+ pps_votes +]%
 
-KPD: [+ kpd_votes +]%
+<span style="color: #aadb37;">**PSL-Lewica**</span>: [+ psl_lewica_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+<span style="color: #36722e;">**PSL "Wyzwolenie"**</span>: [+ wyzwolenie_votes +]%
 
-DVP: [+ dvp_votes +]%
-
-DNVP: [+ dnvp_votes +]%
-
-<span style="color: #15218f;">**SND**</span>: [+ nsdap_votes +]%
+[? if not endecy_name: <span style="color: #15218f;">**SND**</span>?][? if endecy_name != 0 : [+ endecy_name +]?]: [+ endecy_votes +]%
 
 Others: [+ other_votes +]%
 
