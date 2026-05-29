@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-<span style="color: #20a36d;">**PSL "Piast"**</span>: position: [? if piast_toleration : toleration ?][? if piast_in_government : in government - ?][? if piast_toleration == 0 and piast_in_government == 0 and piast_caretaker == 0 : opposition ?][? if piast_caretaker : caretaker government ?]
+<span style="color: #20a36d;">**PSL "Piast"**</span> position: [? if piast_toleration : toleration ?][? if piast_in_government : in government - ?][? if piast_toleration == 0 and piast_in_government == 0 and piast_caretaker == 0 : opposition ?][? if piast_caretaker : caretaker government ?]
 [? if in_weimar_coalition and piast_in_government: Weimar Coalition ?][? if in_grand_coalition and piast_in_government: Grand Coalition ?][? if in_popular_front and piast_in_government: Popular Front ?][? if in_left_front and piast_in_government: Left Front ?][? if in_piast_majority and piast_in_government: piast majority ?][? if in_minority_government and piast_in_government: minority government ?][? if in_emergency_government and piast_in_government: emergency government ?]
 
 [? if piast_in_government and not in_piast_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
@@ -36,7 +36,7 @@ Premier: [+ chancellor +] ([+ chancellor_party +])
 Sejm composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-**{!<span class="tooltip-text" title="Polish People's Party "Piast""><span style="color: #20a36d;">PSL "Piast"</span></span>!}**: [+ spd_r +]%
+**{!<span class="tooltip-text" title="Polish People's Party (Piast)"><span style="color: #20a36d;">PSL "Piast"</span></span>!}**: [+ piast_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
@@ -90,11 +90,11 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of <span style="color: #20a36d;">**PSL "Piast"**</span>
 
-{!<span class="tooltip-text" title="TBA.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+**{!<span class="tooltip-text" title="TBA."><span style="color: #dd9e17;">Left</span></span>!}** strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="TBA">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+**{!<span class="tooltip-text" title="TBA"><span style="color: #3ca338;">Center</span></span>!}** strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="TBA">Right</span>!} strength: [+ right_strength : strength +], dissent: [+ right_dissent : dissent +]
+**{!<span class="tooltip-text" title="TBA"><span style="color: #225f3a;">Right</span></span>!}** strength: [+ right_strength : strength +], dissent: [+ right_dissent : dissent +]
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
