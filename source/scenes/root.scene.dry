@@ -109,9 +109,10 @@ Q.psl_wyzwolenie_relation = 60;
 Q.DNVP_relation = 10;
 Q.NSDAP_relation = 0;
 
-Q.kpd_leader = "Thälmann";
-// alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
+// piast
+Q.piast_leader = "Witos";
+Q.piast_party_leader = "Witos";
+Q.piast_ideology = "<span style="color: #1d5f21;">Agrarianism</span>";
 Q.z_leader = "Brüning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
 Q.z_party_leader = "Marx";
