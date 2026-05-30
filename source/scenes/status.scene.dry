@@ -74,9 +74,9 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Communist Worker's Party of Poland"><span style="color: #740e0e;">KPRP</span></span>!}: [+ kprp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+**[? if not pps_name:{!<span class="tooltip-text" title="Polish Socialist Party and Polish Social Democratic Party of Galicia and Cieszyn Silesia"><span style="color: #d61b1b;">PPS</span>+<span style="color: #d61b1b;">PPSD</span>!}?][? if pps_name != 0 : [+ pps_name +]?]{!</span>!}: [+ pps_relation : relationships +]
 
 {!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
 
@@ -160,7 +160,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 [? if kprp_formed: <span style="color: #740e0e;">**KPRP**</span>: [+ kprp_votes +]% ?]
 
-<span style="color: #d61b1b;">**PPS**</span>: [+ pps_votes +]%
+[? if not pps_name: <span style="color: #d61b1b;">**PPS**</span>+<span style="color: #d61b1b;">**PPSD**</span>?][? if pps_name != 0 : [+ pps_name +]?]: [+ pps_votes +]%
 
 <span style="color: #aadb37;">**PSL-Lewica**</span>: [+ psl_lewica_votes +]%
 
